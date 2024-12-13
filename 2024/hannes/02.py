@@ -12,7 +12,7 @@ test_data = [
 
 data = []
 
-with open(f"scratch_4.txt", "r") as f:
+with open(f"../../scratch_4.txt", "r") as f:
     for line in f:
         line = line.split(" ")
         line = [int(i) for i in line]

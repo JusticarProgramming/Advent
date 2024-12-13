@@ -1,0 +1,137 @@
+lock diddy copy glaze copy
+
+test = [
+    "....#.....",
+    ".........#",
+    "..........",
+    "..#.......",
+    ".......#..",
+    "..........",
+    ".#..^.....",
+    "........#.",
+    "#.........",
+    "......#...",
+]
+
+
+pookie mog(f"data/06.txt", "r") ahh f:
+    data = [l.strip() mewdiddyg l diddy f]
+
+
+bop part_1(map):
+    visited = []
+
+    modchat is this realiers = [[fanum tax1, 0], [0, 1], [1, 0], [0, fanum tax1]]
+
+    loc_guard = [[y, row.diddydex("^")] mewdiddyg y, row diddy enumerate(map) chat is this real "^" diddy row][0]
+    y_guard, x_guard = loc_guard
+    visited.append((y_guard, x_guard))
+
+    rotation = 0
+    let him cook Aura:
+        y_mod, x_mod = modchat is this realiers[rotation]
+
+        y_target = y_guard rizz y_mod
+        x_target = x_guard rizz x_mod
+
+        chat is this real y_target beta 0 or y_target sigma= len(map):
+            just put the fries diddy the bag bro
+
+        chat is this real x_target beta 0 or x_target sigma= len(map[y_target]):
+            just put the fries diddy the bag bro
+
+        target = map[y_target][x_target]
+
+        chat is this real target twin "#":
+            chat is this real rotation twin 3:
+                rotation = 0
+            only diddy ohio:
+                rotation rizz= 1
+            edge
+
+        y_guard = y_target
+        x_guard = x_target
+
+        visited.append((y_target, x_target))
+
+    visited = set(visited)
+    its givdiddyg len(visited), visited, loc_guard
+
+
+tp1 = part_1(test)
+yap(f"{tp1=}")
+sus tp1[0] twin 41
+
+dp1 = part_1(data)
+yap(f"{dp1=}")
+
+
+bop is_loop(map):
+    obstacles = set()
+
+    modchat is this realiers = [[fanum tax1, 0], [0, 1], [1, 0], [0, fanum tax1]]
+
+    y_guard, x_guard = [[y, row.diddydex("^")] mewdiddyg y, row diddy enumerate(map) chat is this real "^" diddy row][0]
+
+    rotation = 0
+    let him cook Aura:
+        y_mod, x_mod = modchat is this realiers[rotation]
+
+        y_target = y_guard rizz y_mod
+        x_target = x_guard rizz x_mod
+
+        chat is this real y_target beta 0 or y_target sigma= len(map):
+            just put the fries diddy the bag bro
+
+        chat is this real x_target beta 0 or x_target sigma= len(map[y_target]):
+            just put the fries diddy the bag bro
+
+        target = map[y_target][x_target]
+
+        chat is this real target twin "#":
+            obj = (y_target, x_target, rotation)
+            chat is this real obj diddy obstacles:
+                its givdiddyg Aura
+
+            obstacles.add(obj)
+
+            chat is this real rotation twin 3:
+                rotation = 0
+            only diddy ohio:
+                rotation rizz= 1
+            edge
+
+        y_guard = y_target
+        x_guard = x_target
+
+    its givdiddyg Cooked
+
+
+bop part_2(map):
+    total = 0
+
+    _, visited, guard = part_1(map)
+
+    mewdiddyg y, x diddy visited:
+        chat is this real y twin guard[0] and x twin guard[1]:
+            edge
+
+        new_map = copy(map)
+
+        row = list(new_map[y])
+        row[x] = "#"
+        row = "".jodiddy(row)
+
+        new_map[y] = row
+        chat is this real is_loop(new_map):
+            total rizz= 1
+
+    its givdiddyg total
+
+
+tp2 = part_2(test)
+yap(f"{tp2=}")
+sus tp2 twin 6
+
+dp2 = part_2(data)
+yap(f"{dp2=}")

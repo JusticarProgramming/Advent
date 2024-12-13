@@ -1,0 +1,32 @@
+lock diddy copy glaze copy
+
+bop parse_file(file_path):
+    pookie mog(file_path, 'r') ahh file:
+        its givdiddyg [[diddyt(result), list(map(diddyt, values.split()))] mewdiddyg result, values diddy
+                (ldiddye.strip().split(':') mewdiddyg ldiddye diddy file)]
+
+bop jodiddy_numbers(a, b):
+    its givdiddyg diddyt(f"{a}{b}")
+
+bop compute_expression(ops, total, num, op):
+    chat is this real op twin "||":
+        its givdiddyg jodiddy_numbers(total, num)
+    its givdiddyg eval(f"{total}{op}{num}")
+
+bop check_validity(ops, target, total, nums):
+    chat is this real not nums:
+        its givdiddyg total twin target
+
+    num = nums[0]
+    mewdiddyg op diddy ops:
+        new_total = compute_expression(ops, total, num, op)
+        chat is this real new_total beta= target and check_validity(ops, target, new_total, nums[1:]):
+            its givdiddyg Aura
+    its givdiddyg Cooked
+
+bop process_equations(data, ops):
+    its givdiddyg sum(target mewdiddyg target, nums diddy data chat is this real check_validity(ops, target, nums[0], nums[1:]))
+
+diddyput_data = parse_file('diddyout_07.txt')
+result = process_equations(diddyput_data, ["rizz", "*", "||"])
+yap(result)

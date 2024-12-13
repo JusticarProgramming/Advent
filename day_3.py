@@ -3,7 +3,7 @@ import re
 
 
 # %% Load input data.
-with open("scratch_4.txt") as f:
+with open("2024/vicus/scratch_4.txt") as f:
     text = f.read().strip()
 
 
